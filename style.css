@@ -1,0 +1,89 @@
+/* remove overall margin */
+body{
+    margin:0;
+}
+
+/* styling for index.html */
+#background{
+    height:100vh; 
+    background-color:#AEC6CF;
+    display:flex;
+}
+#nested-background{
+    margin:auto;
+    height:70vh;
+    width:80vw;
+    border:double 5px;
+    display:flex;
+}
+#loading-container{
+    margin:auto;
+}
+#sg-logo{
+    display:block;
+    margin:auto;
+}
+h3{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:0px;
+}
+h4{
+    text-align: center;
+    font-family:'Dancing Script', cursive;
+    margin-top:0px;
+}
+#loading-bar-container{
+    border:solid 2px; 
+    width:20vw;
+    background-color:white;
+    border-radius:10px; 
+    position:relative;
+    opacity:1;
+    margin:auto;
+}
+#loading-bar{
+    width:2vw;
+    height:3vh;
+    background-color: #c42323;
+    background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
+    border-radius:9px;
+    position:relative;
+    animation-name: move-bar;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+}
+
+@keyframes move-bar{
+    0%{left:0%}
+    10%{left:10%}
+    20%{left:20%}
+    30%{left:30%}
+    40%{left:35%}
+    50%{left:40%}
+    60%{left:50%}
+    70%{left:65%}
+    80%{left:75%}
+    90%{left:85%}
+    100%{left:90%}
+}
+
+#enter{
+    width:10vw;
+    height:5vh;
+    border:solid black 2px;
+    border-radius:10px;
+    font-family:'Dancing Script', cursive;
+    font-size:80%;
+    text-align:center;
+    margin:auto;
+    display:none;
+}
+
+#enter:hover{
+    background-color:pink;
+}
+
+
