@@ -6,14 +6,16 @@ body{
 /* styling for index.html */
 #background{
     height:100vh; 
-    background-color:#AEC6CF;
+    background-image:url('images/chihiro043.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
     display:flex;
 }
 #nested-background{
     margin:auto;
     height:70vh;
     width:80vw;
-    border:double 5px;
+    border:double white 5px;
     display:flex;
 }
 #loading-container{
@@ -23,67 +25,88 @@ body{
     display:block;
     margin:auto;
 }
-h3{
+h1{
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Amatic SC', cursive;
     margin-bottom:0px;
 }
-h4{
+h3{
     text-align: center;
-    font-family:'Dancing Script', cursive;
+    font-family:'Amatic SC', cursive;
     margin-top:0px;
 }
 #loading-bar-container{
     border:solid 2px; 
     width:20vw;
-    background-color:white;
-    border-radius:10px; 
+    color:white;
+    background-image:linear-gradient(to bottom right,#e22323ed,#fb2727);
+    font-family:'VT323', monospace;
+    text-align:center; 
+    animation-name:boarding-message;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-fill-mode:forwards;
     position:relative;
     opacity:1;
     margin:auto;
 }
-#loading-bar{
-    width:2vw;
-    height:3vh;
-    background-color: #c42323;
-    background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
-    border-radius:9px;
-    position:relative;
-    animation-name: move-bar;
-    animation-duration:3s;
-    animation-iteration-count:infinite;
-    animation-fill-mode:forwards;
-    animation-timing-function:linear;
+@keyframes boarding-message{
+    0%{
+        opacity:1;
+    }
+    10%{
+        opacity:0.5;
+    }
+    25%{
+        opacity:0;
+    }
+    35%{
+        opacity:0.5;
+    }
+    50%{
+        opacity:1;
+    }
+    60%{
+        opacity:0.5
+    }
+    75%{
+        opacity:0;
+    }
+    85%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+    }
 }
-
-@keyframes move-bar{
-    0%{left:0%}
-    10%{left:10%}
-    20%{left:20%}
-    30%{left:30%}
-    40%{left:35%}
-    50%{left:40%}
-    60%{left:50%}
-    70%{left:65%}
-    80%{left:75%}
-    90%{left:85%}
-    100%{left:90%}
-}
-
 #enter{
-    width:10vw;
     height:5vh;
-    border:solid black 2px;
-    border-radius:10px;
-    font-family:'Dancing Script', cursive;
-    font-size:80%;
+    background-image:linear-gradient(to bottom right,#93F9B9,#1D976C);
+    font-family:'VT323', monospace;
+    font-size:20px;
     text-align:center;
     margin:auto;
     display:none;
 }
-
+#enter-cabin:visited{
+    color:black;
+}
 #enter:hover{
-    background-color:pink;
+    /* background-image:linear-gradient(to bottom right,#93F9B9,#1D976C); */
+    border:#1D976C;
+}
+
+/* styling for homepage */
+#homepage-background{
+    /* background-color:lightblue; */
+    height:100vh;
+    background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db);
+}
+.nav-link{
+    font-family:'Times New Roman';
+}
+#navbarNavDropdown{
+    justify-content:space-around;
 }
 
 
