@@ -1,6 +1,7 @@
 /* remove overall margin */
 body{
     margin:0;
+    font-family:'Times New Roman';
 }
 
 /* styling for index.html */
@@ -28,6 +29,7 @@ body{
 h1{
     text-align: center;
     font-family: 'Amatic SC', cursive;
+    font-weight:bold;
     margin-bottom:0px;
 }
 h3{
@@ -39,7 +41,7 @@ h3{
     border:solid 2px; 
     width:20vw;
     color:white;
-    background-image:linear-gradient(to bottom right,#e22323ed,#fb2727);
+    background-image:linear-gradient(to bottom right,#e22323ed,#eb1212);
     font-family:'VT323', monospace;
     text-align:center; 
     animation-name:boarding-message;
@@ -47,8 +49,8 @@ h3{
     animation-iteration-count:infinite;
     animation-fill-mode:forwards;
     position:relative;
-    opacity:1;
     margin:auto;
+    visibility:visible;
 }
 @keyframes boarding-message{
     0%{
@@ -81,32 +83,69 @@ h3{
 }
 #enter{
     height:5vh;
-    background-image:linear-gradient(to bottom right,#93F9B9,#1D976C);
-    font-family:'VT323', monospace;
+    background-color:white;
+    font-family:'Amatic SC', cursive;
     font-size:20px;
     text-align:center;
     margin:auto;
     display:none;
+    padding:8px;
+    border-radius:5px;
 }
 #enter-cabin:visited{
     color:black;
 }
 #enter:hover{
-    /* background-image:linear-gradient(to bottom right,#93F9B9,#1D976C); */
-    border:#1D976C;
+    background-color:#19c589;
+    border:#19c589;
 }
 
-/* styling for homepage */
-#homepage-background{
-    /* background-color:lightblue; */
-    height:100vh;
+/* styling for homepage.html */
+.overall-background{
+    height:90vh;
     background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db);
 }
 .nav-link{
-    font-family:'Times New Roman';
+    font-size:20px;
 }
 #navbarNavDropdown{
     justify-content:space-around;
+}
+
+/* styling for select-ticket-page.html */
+
+#layer-1{
+    display:block;
+}
+#layer-2{
+    display:none;
+}
+#layer-3{
+    display:none;
+}
+
+.form-header{
+    padding:30px;
+    font-size:18px;
+}
+#ticket-type{
+    font-weight:bold;
+}
+#confirm-and-payment{
+    font-weight:bold;
+}
+#time-and-date{
+    font-weight:bold;
+}
+.form-container{
+    padding:50px;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.hyperlink:link{
+    color:black;
 }
 
 
