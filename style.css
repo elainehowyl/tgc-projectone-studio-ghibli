@@ -85,7 +85,7 @@ h3{
     height:5vh;
     background-color:white;
     font-family:'Amatic SC', cursive;
-    font-size:20px;
+    font-size:60%;
     text-align:center;
     margin:auto;
     display:none;
@@ -100,16 +100,60 @@ h3{
     border:#19c589;
 }
 
-/* styling for homepage.html */
+/* universal background */
 .overall-background{
     height:90vh;
-    background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db);
+    /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
+    background-color:#f8f9fa;
+    border-top:outset;
 }
+
+/* styling for homepage.html */
 .nav-link{
     font-size:20px;
 }
 #navbarNavDropdown{
     justify-content:space-around;
+}
+.jumbotron{
+    margin:0;
+    height:90vh;
+    background-image:url('images/marnie021.jpg');
+    background-size:cover;
+    animation-name:auto-slider;
+    animation-duration:30s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-in-out;
+    animation-play-state:running;
+}
+
+@keyframes auto-slider{
+    0%{
+        background-image:url('images/chihiro1.jpg');
+    }
+    15%{
+        background-image:url('images/chihiro007.jpg');
+    }
+    30%{
+        background-image:url('images/ged025.jpg');
+    }
+    45%{
+        background-image:url('images/howl038.jpg');
+    }
+    60%{
+        background-image:url('images/kokurikozaka049.jpg');
+    }
+    75%{
+        background-image:url('images/marnie021.jpg');
+    }
+    90%{
+        background-image:url('images/ponyo038.jpg');
+    }
+    100%{
+        background-image:url('images/chihiro1.jpg');
+    }
 }
 
 /* styling for select-ticket-page.html */
@@ -123,19 +167,29 @@ h3{
 #layer-3{
     display:none;
 }
-
+.ticket-form{
+    border:solid;
+    padding:15px;
+}
+h6{
+    border-bottom:outset;
+    padding-bottom:10px;
+}
 .form-header{
     padding:30px;
     font-size:18px;
 }
 #ticket-type{
     font-weight:bold;
+    text-decoration:underline;
 }
 #confirm-and-payment{
     font-weight:bold;
+    text-decoration:underline;
 }
 #time-and-date{
     font-weight:bold;
+    text-decoration:underline;
 }
 .form-container{
     padding:50px;
@@ -143,9 +197,53 @@ h3{
     justify-content:space-around;
     text-align:center;
 }
-
 .hyperlink:link{
     color:black;
 }
 
-
+/* styling for locate us page */
+#map-container{
+    display:flex;
+    justify-content:space-between;
+    padding:50px;
+}
+#map{
+    height:70vh;
+    width:50vw;
+    padding:50px;
+}
+.transportation-mode{
+    display:flex;
+}
+.individual-collapse-container{
+    border:groove 5px;
+    padding:10px;
+    width:35vw;
+    display:flex;
+    justify-content:space-between;
+}
+#collapse{
+    display:flex;
+    flex-direction:column;
+}
+#mrt{
+    border:groove;
+    border-top:hidden;
+    width:35vw;
+    padding:5px;
+    display:none;
+}
+#bus{
+    border:groove;
+    border-top:hidden;
+    width:35vw;
+    padding:5px;
+    display:none;
+}
+#car{
+    border:groove;
+    border-top:hidden;
+    width:35vw;
+    padding:5px;
+    display:none;
+}
