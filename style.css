@@ -4,6 +4,14 @@ body{
     font-family:'Times New Roman';
 }
 
+/* universal background */
+.overall-background{
+    height:90vh;
+    /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
+    background-color:#f8f9fa;
+    border-top:outset;
+}
+
 /* styling for explore.html */
 #background{
     height:90vh; 
@@ -100,13 +108,6 @@ h3{
     border:#19c589;
 }
 
-/* universal background */
-.overall-background{
-    height:90vh;
-    /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
-    background-color:#f8f9fa;
-    border-top:outset;
-}
 
 /* styling for index.html */
 .nav-link{
@@ -171,6 +172,17 @@ h3{
     border:solid;
     padding:15px;
 }
+#date-form-container{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+.date-form{
+    border:solid;
+    padding:15px;
+    width:10vw;
+    height:40vh;
+}
 h6{
     border-bottom:outset;
     padding-bottom:10px;
@@ -199,6 +211,18 @@ h6{
 }
 .hyperlink:link{
     color:black;
+}
+
+.highlighter3{
+    height:6vh;
+    width:30vw;
+    border:outset;
+    background-color:#fafd36;
+    transform:skew(150deg);
+    position:relative;
+    top:-3.5vh;
+    left:-8vw;
+    opacity:0.3;
 }
 
 /* styling for locate us page */
@@ -247,6 +271,17 @@ h6{
     padding:5px;
     display:none;
 }
+#highlighter2{
+    height:6vh;
+    width:42vw;
+    border:outset;
+    background-color:#fafd36;
+    transform:skew(150deg);
+    position:relative;
+    top:-3.5vh;
+    left:-8vw;
+    opacity:0.3;
+}
 
 /* styling for pricingpage */
 #highlighter{
@@ -260,17 +295,19 @@ h6{
     left:-5vw;
     opacity:0.3;
 }
-#highlighter2{
-    height:6vh;
-    width:42vw;
-    border:outset;
-    background-color:#fafd36;
-    transform:skew(150deg);
-    position:relative;
-    top:-3.5vh;
-    left:-8vw;
-    opacity:0.3;
+.header-container{
+    padding:30px;
 }
-#header-container{
-    padding:50px;
+#pricing-container{
+    height:70vh;
+    display:flex;
+    justify-content:space-around;
+}
+.pricing-section{
+    padding:10px;
+    border:solid;
+    border-radius:15px;
+    width:30vw;
+    height:60vh;
+    text-align:center;
 }
