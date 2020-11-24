@@ -171,6 +171,9 @@ h3{
 #layer-3{
     display:none;
 }
+#layer-4{
+    display:none;
+}
 .ticket-form{
     border:solid;
     padding:15px;

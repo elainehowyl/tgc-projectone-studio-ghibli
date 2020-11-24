@@ -2,6 +2,7 @@
 let layerOne = document.querySelector('#layer-1');
 let layerTwo = document.querySelector('#layer-2');
 let layerThree = document.querySelector('#layer-3');
+let layerFour = document.querySelector('#layer-4');
 
 document.querySelector('#next1').addEventListener('click',function(){
     layerOne.style.display='none';
@@ -26,8 +27,9 @@ let priceList = {
     'family': 85,
 }
 
-document.querySelector('#submit').addEventListener('click', function(event){
-    event.preventDefault();
+document.querySelector('#next3').addEventListener('click', function(){
+    // event.preventDefault();
+    // let displayUserInput = document.querySelector('#display-user-input');
     //CALCULATE TOTAL PRICE
     let allChoices = document.querySelectorAll('.ticket-choice');
     let selectedChoice = [];
@@ -78,7 +80,7 @@ document.querySelector('#submit').addEventListener('click', function(event){
     let cardNumber = document.querySelector('#card-number').value
     if (cardNumber.length != 19){
       cardNumberIsInvalid = true;
-      alert("Invalid card number! Please re-enter!")
+      document.querySelector('#card-number-error').innerHTML = "*Card number must be in the format of: XXXX XXXX XXXX XXXX"
     }
     else{
       console.log("Card Number: ", cardNumber)
@@ -86,7 +88,7 @@ document.querySelector('#submit').addEventListener('click', function(event){
     let cardExpiryDate = document.querySelector('#card-date').value
     if (cardExpiryDate.includes('/') == false){
       cardExpiryDateIsInvalid = true;
-      alert("Expiry Date is invalid! Please re-enter!")
+      document.querySelector('#card-date-error').innerHTML = "*Date must be in the format of MM/YY"
     }
     else{
       console.log("Card Expiry Date: ", cardExpiryDate)
@@ -95,7 +97,7 @@ document.querySelector('#submit').addEventListener('click', function(event){
     let cardCvv = document.querySelector('#card-cvv').value
     if (cardCvv.length != 3){
       cardCvvIsInvalid = true;
-      alert("Card CVV is invalid. Please re-enter!")
+      document.querySelector('#card-cvv-error').innerHTML = "*Card CVV must be 3 digits"
     }
     else{
       console.log("Card CVV: ", cardCvv)
@@ -104,7 +106,7 @@ document.querySelector('#submit').addEventListener('click', function(event){
     let nameOnCard = document.querySelector('#card-name').value
     if (nameOnCard.length == 0){
       nameIsInvalid = true;
-      alert("Name is empty. Please enter name on card.")
+      document.querySelector('#card-name-error').innerHTML = "*Name field is empty"
     }
     else{
       console.log("Name: ", nameOnCard)
@@ -113,16 +115,16 @@ document.querySelector('#submit').addEventListener('click', function(event){
     let phoneNum = document.querySelector('#phone-number').value
     if (phoneNum.length != 8){
       phoneNumIsInvalid = true;
-      alert("Invalid phone number. Please re-enter a valid number.")
+      document.querySelector('#hp-error').innerHTML = "*Please enter a valid phone number"
     }
     else{
       console.log("Phone Number: ", phoneNum)
     }
 
     let email = document.querySelector('#email').value
-    if (email.includes('@') == false){
+    if (email.includes('@') == false || email.includes('.') == false){
       emailIsInvalid = true;
-      alert("Invalid email. Please re-enter a valid email.")
+      document.querySelector('#email-error').innerHTML = "*Please enter a valid email address"
     }
     else{
       console.log("Email: ", email)
@@ -136,7 +138,20 @@ document.querySelector('#submit').addEventListener('click', function(event){
       console.log("No, customer do not wish to be informed.")
     }
 
+    // if(!cardExpiryDateIsInvalid && !cardCvvIsInvalid && !nameIsInvalid && !phoneNumIsInvalid && !emailIsInvalid){
+    //   form.submit()
+    // }
     if(!cardExpiryDateIsInvalid && !cardCvvIsInvalid && !nameIsInvalid && !phoneNumIsInvalid && !emailIsInvalid){
-      form.submit()
+      layerThree.style.display = 'none';
+      layerFour.style.display = 'block';
+
+      let displayUserInput = document.querySelector('#display-user-input');
+      displayUserInput.innerHTML = total;
+      displayUserInput.innerHTML = selectedTime;
     }
+})
+
+document.querySelector('#back3').addEventListener('click',function(){
+  layerThree.style.display='block';
+  layerFour.style.display='none';
 })
