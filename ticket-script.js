@@ -1,4 +1,12 @@
 // for select-ticket-page.html
+
+// function for linebreak
+function lineBreak(element){
+  let lineBreak = document.createElement('br');
+  return element.appendChild(lineBreak);
+}
+
+//for layers in the same page
 let layerOne = document.querySelector('#layer-1');
 let layerTwo = document.querySelector('#layer-2');
 let layerThree = document.querySelector('#layer-3');
@@ -22,51 +30,102 @@ document.querySelector('#back2').addEventListener('click',function(){
 })
 
 let priceList = {
-    'individual': 23,
-    'double': 42,
-    'family': 85,
+    'Individual Ticket': 23.0,
+    'Double Trouble': 42.0,
+    'Family Package': 85.0,
 }
 
 document.querySelector('#next3').addEventListener('click', function(){
     // event.preventDefault();
-    // let displayUserInput = document.querySelector('#display-user-input');
-    //CALCULATE TOTAL PRICE
+    
+    //Storing selected ticket type into array
     let allChoices = document.querySelectorAll('.ticket-choice');
-    let selectedChoice = [];
+    let selectedChoices = [];
     for (let choice of allChoices){
       if(choice.checked){
-        selectedChoice.push(choice.value)
+        selectedChoices.push(choice.value)
       }
     }
+    // selecting html p
+    let displayAll = document.querySelector('#display-all');
+    let displayTotal = document.querySelector('#display-total');
+
+    // getting selected quantity value
     let individualQuantity = document.querySelector('#individual-select').value;
     let doubleQuantity = document.querySelector('#double-select').value;
     let familyQuantity = document.querySelector('#family-select').value;
 
+    // displaying order summary
     let total = 0;
-    for(eachChoice of selectedChoice){
-      if(eachChoice == 'individual'){
-        total += priceList[eachChoice]*individualQuantity;
+    let individualTotal = 0;
+    let doubleTotal =0;
+    let familyTotal =0;
+    let ticketType = null;
+    let ticketQuantity = null;
+    let ticketPrice = null;
+    for(let eachChoice of selectedChoices){
+      if(eachChoice == 'Individual Ticket'){
+        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        displayAll.appendChild(ticketType);
+        lineBreak(displayAll);
+        ticketQuantity = document.createTextNode('QUANTITY: ' + individualQuantity);
+        displayAll.appendChild(ticketQuantity);
+        lineBreak(displayAll);
+        individualTotal = priceList[eachChoice]*individualQuantity;
+        ticketPrice = document.createTextNode('PRICE: $' + individualTotal);
+        displayAll.appendChild(ticketPrice);
+        lineBreak(displayAll);
+        total += individualTotal;
       }
-      if(eachChoice == 'double'){
-        total += priceList[eachChoice]*doubleQuantity;
+      if(eachChoice == 'Double Trouble'){
+        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        displayAll.appendChild(ticketType);
+        lineBreak(displayAll);
+        ticketQuantity = document.createTextNode('QUANTITY: ' + doubleQuantity);
+        displayAll.appendChild(ticketQuantity);
+        lineBreak(displayAll);
+        doubleTotal = priceList[eachChoice]*doubleQuantity;
+        ticketPrice = document.createTextNode('PRICE: $' + doubleTotal);
+        displayAll.appendChild(ticketPrice);
+        lineBreak(displayAll);
+        total += doubleTotal;
       }
-      if(eachChoice == 'family'){
-        total += priceList[eachChoice]*familyQuantity;
+      if(eachChoice == 'Family Package'){
+        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        displayAll.appendChild(ticketType);
+        lineBreak(displayAll);
+        ticketQuantity = document.createTextNode('QUANTITY: ' + familyQuantity);
+        displayAll.appendChild(ticketQuantity);
+        lineBreak(displayAll);
+        familyTotal = priceList[eachChoice]*familyQuantity;
+        ticketPrice = document.createTextNode('PRICE: $' + familyTotal);
+        displayAll.appendChild(ticketPrice);
+        lineBreak(displayAll);
+        total += familyTotal;
       }
     }
-    console.log("Total cost: $", total)
+    //displaying total cost
+    let totalCost = document.createTextNode('TOTAL COST: $' + total);
+    displayTotal.appendChild(totalCost);
     
-    //RETURN SELECTED TIME AND DATE
-    let dateTimeChoice = document.querySelectorAll('.date-choice')
+    //return selected time and date
+    let dateTimeChoice = document.querySelectorAll('.date-choice');
+    let displayDateTime = document.querySelector('#display-date-time');
     for(let dateChoice of dateTimeChoice){
         if(dateChoice.checked){
-            console.log("Date selected: ", dateChoice.value)
+          let selectedDate = document.createTextNode('SELECTED DATE: ' + dateChoice.value);
+          displayDateTime.appendChild(selectedDate)
+          lineBreak(displayDateTime);
         }
     }
-    let selectedTime = document.querySelector('#time-selection').value
-    console.log("Time selected: ", selectedTime)
+    let selectedTime = document.querySelector('#time-selection').value;
+    let displayTime = document.createTextNode('SELECTED TIMING: ' + selectedTime);
+    displayDateTime.appendChild(displayTime);
 
-    //CARD INPUT VALIDATION
+    //card input validation
+
+    //for display contact number div
+    let displayContact = document.querySelector('#display-contact');
     
     //initialise validation status
     let cardNumberIsInvalid = false;
@@ -118,7 +177,9 @@ document.querySelector('#next3').addEventListener('click', function(){
       document.querySelector('#hp-error').innerHTML = "*Please enter a valid phone number"
     }
     else{
-      console.log("Phone Number: ", phoneNum)
+      let displayPhoneNum = document.createTextNode('PHONE NUMBER: ' + phoneNum);
+      displayContact.appendChild(displayPhoneNum);
+      lineBreak(displayContact);
     }
 
     let email = document.querySelector('#email').value
@@ -127,7 +188,8 @@ document.querySelector('#next3').addEventListener('click', function(){
       document.querySelector('#email-error').innerHTML = "*Please enter a valid email address"
     }
     else{
-      console.log("Email: ", email)
+      let displayEmail = document.createTextNode('EMAIL: ' + email);
+      displayContact.appendChild(displayEmail);
     }
 
     let agreement = document.querySelector('#agreement').value
@@ -144,10 +206,6 @@ document.querySelector('#next3').addEventListener('click', function(){
     if(!cardExpiryDateIsInvalid && !cardCvvIsInvalid && !nameIsInvalid && !phoneNumIsInvalid && !emailIsInvalid){
       layerThree.style.display = 'none';
       layerFour.style.display = 'block';
-
-      let displayUserInput = document.querySelector('#display-user-input');
-      displayUserInput.innerHTML = total;
-      displayUserInput.innerHTML = selectedTime;
     }
 })
 
@@ -155,3 +213,7 @@ document.querySelector('#back3').addEventListener('click',function(){
   layerThree.style.display='block';
   layerFour.style.display='none';
 })
+
+// document.querySelector('#submit').addEventListener('click',function(){
+//   document.querySelector('#submit-alert').style.display = "block";
+// })

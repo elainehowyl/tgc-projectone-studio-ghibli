@@ -201,7 +201,11 @@ h6{
     font-weight:bold;
     text-decoration:underline;
 }
-#confirm-and-payment{
+#payment-and-contact{
+    font-weight:bold;
+    text-decoration:underline;
+}
+#confirm-and-submit{
     font-weight:bold;
     text-decoration:underline;
 }
@@ -229,6 +233,9 @@ h6{
     top:-3.5vh;
     left:-8vw;
     opacity:0.3;
+}
+#submit-alert{
+    display:none;
 }
 
 /* styling for locate us page */

@@ -52,7 +52,7 @@
                 <div class="form-header" id="ticket-type">1. Select Ticket Type</div>
                 <div class="form-container">
                     <div class="ticket-form">
-                        <input class="form-check-input ticket-choice" type="checkbox" value="individual"
+                        <input class="form-check-input ticket-choice" type="checkbox" value="Individual Ticket"
                             id="individual-ticket">
                         <label for="exampleFormControlSelect1" style="font-size:large">Individual Ticket</label>
                         <h6>(SGD$23.00)</h6><br>
@@ -69,7 +69,7 @@
                         </select>
                     </div><br>
                     <div class="ticket-form">
-                        <input class="form-check-input ticket-choice" type="checkbox" value="double" id="double-trouble">
+                        <input class="form-check-input ticket-choice" type="checkbox" value="Double Trouble" id="double-trouble">
                         <label for="exampleFormControlSelect1" style="font-size:large">Double Trouble</label>
                         <h6>(SGD$42.00)</h6><br>
                         <svg width="20vw" height="20vh" viewBox="0 0 16 16" class="bi bi-people" fill="currentColor"
@@ -85,7 +85,7 @@
                         </select>
                     </div><br>
                     <div class="ticket-form">
-                        <input class="form-check-input ticket-choice" type="checkbox" value="family" id="family-package">
+                        <input class="form-check-input ticket-choice" type="checkbox" value="Family Package" id="family-package">
                         <label for="exampleFormControlSelect1" style="font-size:large">Family Package</label>
                         <h6>(SGD$85.00)</h6><br>
                         <svg width="20vw" height="20vh" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor"
@@ -169,7 +169,7 @@
                     <div class="highlighter3"></div>
                 </div>
                 <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > <span
-                        id="confirm-and-payment">3. Confirm & Payment</span></div>
+                        id="payment-and-contact">3. Payment & Contact</span></div>
                 <div class="form-container">
                     <button type="button" class="btn btn-outline-dark" id="back2">
                         << </button>
@@ -210,7 +210,6 @@
                                 <input class="form-check-input" type="checkbox" value="agree" id="agreement">
                                 <label class="form-check-label" for="defaultCheck">I wish to be informed about upcoming
                                     events and promotions.</label><br><br><br>
-                                <button type="submit" id="submit" class="btn btn-outline-dark">Submit</button>
                             </div>
                             <button type="button" class="btn btn-outline-dark" id="next3">>></button>
                 </div>
@@ -221,12 +220,25 @@
                     <h2>Reserve Ticket Now</h2>
                     <div class="highlighter3"></div>
                 </div>
-                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > <span
-                        id="confirm-and-payment">3. Confirm & Paymenttt</span></div>
+                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > 3. Payment & Contact > <span id="confirm-and-submit"> 4. Confirm & Submit</span></div>
                 <div class="form-container">
                     <button type="button" class="btn btn-outline-dark" id="back3"> << </button>
-                    <div id="display-user-input"></div>
+                    <div>
+                        <p style="font-weight:bold; font-size:20px">Ticket Summary: </p>
+                        <p id="display-all"></p>
+                        <p id="display-total"></p>
+                        <p id="display-date-time"></p>
+                    </div>
+                    <div>
+                        <p style="font-weight:bold; font-size:20px">Confirm Contact Details: </p>
+                        <p id="display-contact"></p><br><br>
+                        <button id="submit" class="btn btn-outline-dark">Confirm and Pay</button>
+                    </div>
                 </div>
+                <!-- <div class="alert alert-primary" id="submit-alert" role="alert">
+                    <p>Payment is successful! Please check your email inbox for the ticket details.</p>
+                    <button href = "index.html">Return To Home</button>
+                </div> -->
             </div>
         </form>
     </div>
