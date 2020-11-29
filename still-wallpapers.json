@@ -4,7 +4,10 @@
         "image": [
             "still-wallpapers/spirited-away/thumb-chihiro002.png",
             "still-wallpapers/spirited-away/thumb-chihiro003.png",
+            "still-wallpapers/spirited-away/thumb-chihiro004.png",
             "still-wallpapers/spirited-away/thumb-chihiro011.png",
+            "still-wallpapers/spirited-away/thumb-chihiro012.png",
+            "still-wallpapers/spirited-away/thumb-chihiro031.png",
             "still-wallpapers/spirited-away/thumb-chihiro033.png",
             "still-wallpapers/spirited-away/thumb-chihiro042.png"
         ]
@@ -13,7 +16,10 @@
         "title":"Arrietty",
         "image":[
             "still-wallpapers/arrietty/thumb-karigurashi006.png",
+            "still-wallpapers/arrietty/thumb-karigurashi009.png",
+            "still-wallpapers/arrietty/thumb-karigurashi018.png",
             "still-wallpapers/arrietty/thumb-karigurashi027.png",
+            "still-wallpapers/arrietty/thumb-karigurashi031.png",
             "still-wallpapers/arrietty/thumb-karigurashi032.png",
             "still-wallpapers/arrietty/thumb-karigurashi045.png",
             "still-wallpapers/arrietty/thumb-karigurashi047.png"
@@ -22,19 +28,25 @@
     {
         "title":"My Neighbor Totoro",
         "image":[
+            "still-wallpapers/totoro/thumb-totoro001.png",
             "still-wallpapers/totoro/thumb-totoro020.png",
             "still-wallpapers/totoro/thumb-totoro024.png",
             "still-wallpapers/totoro/thumb-totoro025.png",
+            "still-wallpapers/totoro/thumb-totoro028.png",
             "still-wallpapers/totoro/thumb-totoro029.png",
+            "still-wallpapers/totoro/thumb-totoro037.png",
             "still-wallpapers/totoro/thumb-totoro047.png"
         ]
     },
     {
         "title":"Princess Mononoke",
         "image":[
+            "still-wallpapers/princess-mononoke/thumb-mononoke010.png",
             "still-wallpapers/princess-mononoke/thumb-mononoke017.png",
             "still-wallpapers/princess-mononoke/thumb-mononoke023.png",
+            "still-wallpapers/princess-mononoke/thumb-mononoke027.png",
             "still-wallpapers/princess-mononoke/thumb-mononoke031.png",
+            "still-wallpapers/princess-mononoke/thumb-mononoke034.png",
             "still-wallpapers/princess-mononoke/thumb-mononoke044.png",
             "still-wallpapers/princess-mononoke/thumb-mononoke045.png"
         ]
@@ -43,10 +55,13 @@
         "title":"From Up on Poppy Hill",
         "image":[
             "still-wallpapers/poppy-hill/thumb-kokurikozaka004.png",
+            "still-wallpapers/poppy-hill/thumb-kokurikozaka009.png",
             "still-wallpapers/poppy-hill/thumb-kokurikozaka012.png",
             "still-wallpapers/poppy-hill/thumb-kokurikozaka017.png",
             "still-wallpapers/poppy-hill/thumb-kokurikozaka031.png",
-            "still-wallpapers/poppy-hill/thumb-kokurikozaka036.png"
+            "still-wallpapers/poppy-hill/thumb-kokurikozaka036.png",
+            "still-wallpapers/poppy-hill/thumb-kokurikozaka040.png",
+            "still-wallpapers/poppy-hill/thumb-kokurikozaka050.png"
         ]
     }
 ]

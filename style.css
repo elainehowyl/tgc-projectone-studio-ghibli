@@ -6,7 +6,7 @@ body{
 
 /* universal background */
 .overall-background{
-    height:90vh;
+    /* height:90vh; */
     /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
     background-color:#f8f9fa;
     border-top:outset;
@@ -326,10 +326,6 @@ h6{
 }
 
 /* for explore page */
-/* #poster-container{
-    display:flex;
-} */
-
 #totoro{
     display:flex;
 }
@@ -344,4 +340,17 @@ h6{
 }
 #poppy-hill{
     display:flex;
+}
+.poster-styling{
+    padding:25px;
+}
+.introduction-styling{
+    font-size:16px;
+    padding:15px;
+}
+.gallery-styling{
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }

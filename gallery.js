@@ -16,28 +16,29 @@ function lineBreak(element){
     return element.appendChild(lineBreak);
 }
 
+//introduction from api
 async function introduction1(){
     let films = await getFilms();
     let introductionContainer = document.querySelector('#introduction-container-1')
     for(let film of films){
         if(film.title == 'My Neighbor Totoro'){
-            let title=document.createTextNode(film.title);
+            let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let description = document.createTextNode(film.description);
+            let description = document.createTextNode("Synopsis: " + film.description);
             introductionContainer.appendChild(description);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let director=document.createTextNode(film.director);
+            let director=document.createTextNode("Director: " + film.director);
             introductionContainer.appendChild(director);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let producer=document.createTextNode(film.producer);
+            let producer=document.createTextNode("Producer: " + film.producer);
             introductionContainer.appendChild(producer);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode(film.release_date);
+            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
             introductionContainer.appendChild(releaseDate);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
@@ -50,23 +51,23 @@ async function introduction2(){
     let introductionContainer = document.querySelector('#introduction-container-2')
     for(let film of films){
         if(film.title == 'Princess Mononoke'){
-            let title=document.createTextNode(film.title);
+            let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let description = document.createTextNode(film.description);
+            let description = document.createTextNode("Sypnosis: " + film.description);
             introductionContainer.appendChild(description);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let director=document.createTextNode(film.director);
+            let director=document.createTextNode("Director: " + film.director);
             introductionContainer.appendChild(director);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let producer=document.createTextNode(film.producer);
+            let producer=document.createTextNode("Producer: " + film.producer);
             introductionContainer.appendChild(producer);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode(film.release_date);
+            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
             introductionContainer.appendChild(releaseDate);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
@@ -79,23 +80,23 @@ async function introduction3(){
     let introductionContainer = document.querySelector('#introduction-container-3')
     for(let film of films){
         if(film.title == 'Spirited Away'){
-            let title=document.createTextNode(film.title);
+            let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let description = document.createTextNode(film.description);
+            let description = document.createTextNode("Sypnosis: " + film.description);
             introductionContainer.appendChild(description);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let director=document.createTextNode(film.director);
+            let director=document.createTextNode("Director: " + film.director);
             introductionContainer.appendChild(director);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let producer=document.createTextNode(film.producer);
+            let producer=document.createTextNode("Producer: " + film.producer);
             introductionContainer.appendChild(producer);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode(film.release_date);
+            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
             introductionContainer.appendChild(releaseDate);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
@@ -108,23 +109,23 @@ async function introduction4(){
     let introductionContainer = document.querySelector('#introduction-container-4')
     for(let film of films){
         if(film.title == 'Arrietty'){
-            let title=document.createTextNode(film.title);
+            let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let description = document.createTextNode(film.description);
+            let description = document.createTextNode("Sypnosis: " + film.description);
             introductionContainer.appendChild(description);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let director=document.createTextNode(film.director);
+            let director=document.createTextNode("Director: " + film.director);
             introductionContainer.appendChild(director);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let producer=document.createTextNode(film.producer);
+            let producer=document.createTextNode("Producer: " + film.producer);
             introductionContainer.appendChild(producer);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode(film.release_date);
+            let releaseDate=document.createTextNode("Release Date:" + film.release_date);
             introductionContainer.appendChild(releaseDate);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
@@ -137,23 +138,23 @@ async function introduction5(){
     let introductionContainer = document.querySelector('#introduction-container-5')
     for(let film of films){
         if(film.title == 'From Up on Poppy Hill'){
-            let title=document.createTextNode(film.title);
+            let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let description = document.createTextNode(film.description);
+            let description = document.createTextNode("Sypnosis: " + film.description);
             introductionContainer.appendChild(description);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let director=document.createTextNode(film.director);
+            let director=document.createTextNode("Director: " + film.director);
             introductionContainer.appendChild(director);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let producer=document.createTextNode(film.producer);
+            let producer=document.createTextNode("Producer: " + film.producer);
             introductionContainer.appendChild(producer);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode(film.release_date);
+            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
             introductionContainer.appendChild(releaseDate);
             lineBreak(introductionContainer);
             lineBreak(introductionContainer);
@@ -161,14 +162,13 @@ async function introduction5(){
     }
 }
 
-setTimeout(function(){
-    introduction1();
-    introduction2();
-    introduction3();
-    introduction4();
-    introduction5();
-},0);
+introduction1();
+introduction2();
+introduction3();
+introduction4();
+introduction5();
 
+//gallery photos from json file
 document.querySelector('#show1').addEventListener('click',async function(){
     let bgimgs = await getBG();
     let galleryContainer = document.querySelector('#gallery-container-1')
@@ -184,10 +184,6 @@ document.querySelector('#show1').addEventListener('click',async function(){
     }
 })
 
-
-document.querySelector('#close1').addEventListener('click',function(){
-    document.querySelector('#gallery-container-1').style.display='none';
-})
 
 document.querySelector('#show2').addEventListener('click',async function(){
     let bgimgs = await getBG();
