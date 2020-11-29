@@ -324,3 +324,24 @@ h6{
     height:60vh;
     text-align:center;
 }
+
+/* for explore page */
+/* #poster-container{
+    display:flex;
+} */
+
+#totoro{
+    display:flex;
+}
+#mononoke{
+    display:flex;
+}
+#spirited-away{
+    display:flex;
+}
+#arrietty{
+    display:flex;
+}
+#poppy-hill{
+    display:flex;
+}
