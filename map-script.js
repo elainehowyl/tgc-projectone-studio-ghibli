@@ -17,24 +17,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 let artScienceMarker = L.marker([1.2863,103.8593]);
 artScienceMarker.addTo(map);
 
-//collapse-button
-document.querySelector('#open-1').addEventListener('click', function(){
-    document.querySelector('#mrt').style.display='block';
-})
-document.querySelector('#close-1').addEventListener('click', function(){
-    document.querySelector('#mrt').style.display='none';
-})
+//marker's popout address
+artScienceMarker.bindPopup(`<h5>Art Science Museum</h5>
+                            <img src='images/artsciencemuseum.jpg' height=50 width=90>
+                            <img src='images/artsciencemuseum2.jpg' height=50 width=90>
+                            <p>6 Bayfront Ave, Singapore 018974<p>`)
 
-document.querySelector('#open-2').addEventListener('click', function(){
-    document.querySelector('#bus').style.display='block';
-})
-document.querySelector('#close-2').addEventListener('click', function(){
-    document.querySelector('#bus').style.display='none';
-})
-
-document.querySelector('#open-3').addEventListener('click', function(){
-    document.querySelector('#car').style.display='block';
-})
-document.querySelector('#close-3').addEventListener('click', function(){
-    document.querySelector('#car').style.display='none';
-})

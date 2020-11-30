@@ -12,6 +12,15 @@ body{
     border-top:outset;
 }
 
+
+/* universal page header */
+.page-header{
+    height:10vh;
+    width:30vw;
+    font-size:25px;
+    background-color:palegoldenrod;
+}
+
 /* styling for explore.html */
 #background{
     height:90vh; 
@@ -252,51 +261,14 @@ h6{
 .transportation-mode{
     display:flex;
 }
-.individual-collapse-container{
-    border:groove 5px;
-    padding:10px;
-    width:35vw;
-    display:flex;
-    justify-content:space-between;
-}
-#collapse{
-    display:flex;
-    flex-direction:column;
-}
-#mrt{
-    border:groove;
-    border-top:hidden;
-    width:35vw;
-    padding:5px;
-    display:none;
-}
-#bus{
-    border:groove;
-    border-top:hidden;
-    width:35vw;
-    padding:5px;
-    display:none;
-}
-#car{
-    border:groove;
-    border-top:hidden;
-    width:35vw;
-    padding:5px;
-    display:none;
-}
-#highlighter2{
-    height:6vh;
-    width:42vw;
-    border:outset;
-    background-color:#fafd36;
-    transform:skew(150deg);
-    position:relative;
-    top:-3.5vh;
-    left:-8vw;
-    opacity:0.3;
-}
 
 /* styling for pricingpage */
+#pricing-background{
+    background-image:url('images/pricingpage-bg.jpg');
+    height:100vh;
+    width:100vw;
+    background-size:cover;
+}
 #highlighter{
     height:6vh;
     width:35vw;
@@ -315,17 +287,11 @@ h6{
     height:70vh;
     display:flex;
     justify-content:space-around;
-}
-.pricing-section{
-    padding:10px;
-    border:solid;
-    border-radius:15px;
-    width:30vw;
-    height:60vh;
-    text-align:center;
+    align-items:center;
 }
 
-/* for explore page */
+
+/* for gallery page */
 #totoro{
     display:flex;
 }
@@ -353,4 +319,21 @@ h6{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+}
+#gallery-bg{
+    background-image:url('images/studio-ghibli-office.jpg');
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+} 
+#about-studio{
+    padding:25px;
+    height:60vh;
+    background-color:#f8f9fae8;
+    text-align:center;
+}
+.bold-and-center{
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
 }

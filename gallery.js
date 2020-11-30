@@ -16,12 +16,13 @@ function lineBreak(element){
     return element.appendChild(lineBreak);
 }
 
-//introduction from api
-async function introduction1(){
+
+//function to display films info from studio ghibli api
+async function getFilmsInfo(containerID,filmTitle){
     let films = await getFilms();
-    let introductionContainer = document.querySelector('#introduction-container-1')
+    let introductionContainer = document.querySelector(containerID)
     for(let film of films){
-        if(film.title == 'My Neighbor Totoro'){
+        if(film.title == filmTitle){
             let title=document.createTextNode("Title: " + film.title);
             introductionContainer.appendChild(title);
             lineBreak(introductionContainer);
@@ -46,134 +47,12 @@ async function introduction1(){
     }
 }
 
-async function introduction2(){
-    let films = await getFilms();
-    let introductionContainer = document.querySelector('#introduction-container-2')
-    for(let film of films){
-        if(film.title == 'Princess Mononoke'){
-            let title=document.createTextNode("Title: " + film.title);
-            introductionContainer.appendChild(title);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let description = document.createTextNode("Sypnosis: " + film.description);
-            introductionContainer.appendChild(description);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let director=document.createTextNode("Director: " + film.director);
-            introductionContainer.appendChild(director);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let producer=document.createTextNode("Producer: " + film.producer);
-            introductionContainer.appendChild(producer);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
-            introductionContainer.appendChild(releaseDate);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-        }
-    }
-}
-
-async function introduction3(){
-    let films = await getFilms();
-    let introductionContainer = document.querySelector('#introduction-container-3')
-    for(let film of films){
-        if(film.title == 'Spirited Away'){
-            let title=document.createTextNode("Title: " + film.title);
-            introductionContainer.appendChild(title);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let description = document.createTextNode("Sypnosis: " + film.description);
-            introductionContainer.appendChild(description);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let director=document.createTextNode("Director: " + film.director);
-            introductionContainer.appendChild(director);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let producer=document.createTextNode("Producer: " + film.producer);
-            introductionContainer.appendChild(producer);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
-            introductionContainer.appendChild(releaseDate);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-        }
-    }
-}
-
-async function introduction4(){
-    let films = await getFilms();
-    let introductionContainer = document.querySelector('#introduction-container-4')
-    for(let film of films){
-        if(film.title == 'Arrietty'){
-            let title=document.createTextNode("Title: " + film.title);
-            introductionContainer.appendChild(title);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let description = document.createTextNode("Sypnosis: " + film.description);
-            introductionContainer.appendChild(description);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let director=document.createTextNode("Director: " + film.director);
-            introductionContainer.appendChild(director);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let producer=document.createTextNode("Producer: " + film.producer);
-            introductionContainer.appendChild(producer);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode("Release Date:" + film.release_date);
-            introductionContainer.appendChild(releaseDate);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-        }
-    }
-}
-
-async function introduction5(){
-    let films = await getFilms();
-    let introductionContainer = document.querySelector('#introduction-container-5')
-    for(let film of films){
-        if(film.title == 'From Up on Poppy Hill'){
-            let title=document.createTextNode("Title: " + film.title);
-            introductionContainer.appendChild(title);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let description = document.createTextNode("Sypnosis: " + film.description);
-            introductionContainer.appendChild(description);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let director=document.createTextNode("Director: " + film.director);
-            introductionContainer.appendChild(director);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let producer=document.createTextNode("Producer: " + film.producer);
-            introductionContainer.appendChild(producer);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-            let releaseDate=document.createTextNode("Release Date: " + film.release_date);
-            introductionContainer.appendChild(releaseDate);
-            lineBreak(introductionContainer);
-            lineBreak(introductionContainer);
-        }
-    }
-}
-
-introduction1();
-introduction2();
-introduction3();
-introduction4();
-introduction5();
-
-//gallery photos from json file
-document.querySelector('#show1').addEventListener('click',async function(){
+//function to display images from still-wallpapers.json 
+async function getImages(galleryID,filmTitle){
     let bgimgs = await getBG();
-    let galleryContainer = document.querySelector('#gallery-container-1')
+    let galleryContainer = document.querySelector(galleryID);
     for(let bgimg of bgimgs){
-        if(bgimg.title == 'My Neighbor Totoro'){
+        if(bgimg.title == filmTitle){
             for(let x of bgimg.image){
                 let img = document.createElement("img");
                 img.src = x;
@@ -182,67 +61,30 @@ document.querySelector('#show1').addEventListener('click',async function(){
             lineBreak(galleryContainer);
         }
     }
+    let copyRight = document.createTextNode('© 2020 All Rights Reserved, Studio Ghibli');
+    galleryContainer.appendChild(copyRight);
+}
+
+getFilmsInfo('#introduction-container-1','My Neighbor Totoro');
+getFilmsInfo('#introduction-container-2','Princess Mononoke');
+getFilmsInfo('#introduction-container-3','Spirited Away');
+getFilmsInfo('#introduction-container-4','Arrietty');
+getFilmsInfo('#introduction-container-5','From Up on Poppy Hill');
+
+
+document.querySelector('#show1').addEventListener('click', async function(){
+    await getImages('#gallery-container-1','My Neighbor Totoro')
 })
-
-
-document.querySelector('#show2').addEventListener('click',async function(){
-    let bgimgs = await getBG();
-    let galleryContainer = document.querySelector('#gallery-container-2')
-    for(let bgimg of bgimgs){
-        if(bgimg.title == 'Princess Mononoke'){
-            for(let x of bgimg.image){
-                let img = document.createElement("img");
-                img.src = x;
-                galleryContainer.appendChild(img);
-            }
-            lineBreak(galleryContainer);
-        }
-    }
+document.querySelector('#show2').addEventListener('click', async function(){
+    await getImages('#gallery-container-2','Princess Mononoke')
 })
-
-document.querySelector('#show3').addEventListener('click',async function(){
-    let bgimgs = await getBG();
-    let galleryContainer = document.querySelector('#gallery-container-3')
-    for(let bgimg of bgimgs){
-        if(bgimg.title == 'Spirited Away'){
-            for(let x of bgimg.image){
-                let img = document.createElement("img");
-                img.src = x;
-                galleryContainer.appendChild(img)
-            }
-            lineBreak(galleryContainer);
-        }
-    }
+document.querySelector('#show3').addEventListener('click', async function(){
+    await getImages('#gallery-container-3','Spirited Away')
 })
-
-document.querySelector('#show4').addEventListener('click',async function(){
-    let bgimgs = await getBG();
-    let galleryContainer = document.querySelector('#gallery-container-4')
-    for(let bgimg of bgimgs){
-        if(bgimg.title == 'Arrietty'){
-            for(let x of bgimg.image){
-                let img = document.createElement("img");
-                img.src = x;
-                galleryContainer.appendChild(img);
-            }
-            lineBreak(galleryContainer);
-        }
-    }
+document.querySelector('#show4').addEventListener('click', async function(){
+    await getImages('#gallery-container-4','Arrietty')
 })
-
-document.querySelector('#show5').addEventListener('click',async function(){
-    let bgimgs = await getBG();
-    let galleryContainer = document.querySelector('#gallery-container-5')
-    for(let bgimg of bgimgs){
-        if(bgimg.title == 'From Up on Poppy Hill'){
-            for(let x of bgimg.image){
-                let img = document.createElement("img");
-                img.src = x;
-                galleryContainer.appendChild(img);
-            }
-            lineBreak(galleryContainer);
-        }
-    }
+document.querySelector('#show5').addEventListener('click', async function(){
+    await getImages('#gallery-container-5','From Up on Poppy Hill')
 })
-
 

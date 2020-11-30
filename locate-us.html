@@ -46,59 +46,72 @@
         <a class="btn btn-outline-dark" href="select-ticket-page.html" role="button">Tickets</a>
       </nav>
       <div class="overall-background" id="map-container">
-          <div id="collapse">
-            <h2>Getting to Art Science Museum</h2>
-            <div id="highlighter2"></div>
-            <div class="individual-collapse-container">
-              <div class="transportation-mode">
-                <h4>By MRT</h4>
-                <i class="material-icons">directions_subway</i>
+        <div class="accordion" id="accordionExample">
+            <div class="page-header">Getting to Art Science Museum</div><br>
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="transportation-mode">
+                     <h4>By MRT</h4>
+                        <i class="material-icons">directions_subway</i>
+                    </div>
+                  </button>
+                </h2>
               </div>
-              <div>
-                <button id="open-1">↓</button>
-                <button id="close-1">↑</button>
-              </div>
-            </div>
-            <div id="mrt">
-              <p>Bayfront Station (Exit D)</p>
-              <p>7min walk to ArtScience Museum</p><br>
-              <p>Bayfront Station (Exit B)</p>
-              <p>11min walk to ArtScience Museum</p><br>
-              <p>Bayfront Station (Exit C)</p>
-              <p>17min walk to ArtScience Museum</p>
-            </div>
-            <div class="individual-collapse-container">
-              <div class="transportation-mode">
-                <h4>By Bus</h4>
-                <i class="material-icons">directions_bus</i>
-              </div>
-              <div>
-                <button id="open-2">↓</button>
-                <button id="close-2">↑</button>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                        <p>Bayfront Station (Exit D):</p>
+                        <p>7min walk to ArtScience Museum</p><br>
+                        <p>Bayfront Station (Exit B):</p>
+                        <p>11min walk to ArtScience Museum</p><br>
+                        <p>Bayfront Station (Exit C):</p>
+                        <p>17min walk to ArtScience Museum</p>
+                </div>
               </div>
             </div>
-            <div id="bus">
-              <p>Bus Services</p>
-              <p>SMRT: 97, 97E, 133, 133M, 502, 518</p>
-              <p>SBS: 106</p><br>
-              <p>From Marine Bay Sands Theatre Bus Stop:</p>
-              <p>8 min walk to ArtScience Museum</p><br>
-              <p>From Bayfront Station Exit B/Marine Bay Sands Bus Stop:</p>
-              <p>12 min walk to ArtScience Museum</p>
-            </div>
-            <div class="individual-collapse-container">
-              <div class="transportation-mode">
-                <h4>By Car</h4>
-                <i class="material-icons">directions_car</i>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="transportation-mode">
+                     <h4>By Bus</h4>
+                     <i class="material-icons">directions_bus</i>
+                    </div>
+                  </button>
+                </h2>
               </div>
-              <div>
-                <button id="open-3">↓</button>
-                <button id="close-3">↑</button>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Bus Services</p>
+                    <p>SMRT: 97, 97E, 133, 133M, 502, 518</p>
+                    <p>SBS: 106</p><br>
+                    <p>From Marine Bay Sands Theatre Bus Stop:</p>
+                    <p>8 min walk to ArtScience Museum</p><br>
+                    <p>From Bayfront Station Exit B/Marine Bay Sands Bus Stop:</p>
+                    <p>12 min walk to ArtScience Museum</p>
+                </div>
               </div>
             </div>
-            <div id="car">
-              <p>The nearest car park to ArtScience Museum is the North Car Park at Marina Bay Sands.</p>
-              <p>Take the lift to Level 1 and walk out to the Waterfront Promenade to get to ArtScience Museum</p>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="transportation-mode">
+                     <h4>By Car</h4>
+                     <i class="material-icons">directions_car</i>
+                    </div>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Nearest car park: North Car Park at Marina Bay Sands.</p>
+                    <p>Take the lift to Level 1 to the Waterfront Promenade 
+                        <br>to get to ArtScience Museum</p>
+                </div>
+              </div>
             </div>
           </div>
           <div id="map"></div>

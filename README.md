@@ -1,6 +1,6 @@
 # tgc-projectone-studio-ghibli
 
-1. discuss strategy of the project:
+### 1. discuss strategy of the project:
 
    >>> user's goals
        >>> consumer or business?

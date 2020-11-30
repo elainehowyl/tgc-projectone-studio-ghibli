@@ -65,47 +65,47 @@ document.querySelector('#next3').addEventListener('click', function(){
     let ticketPrice = null;
     for(let eachChoice of selectedChoices){
       if(eachChoice == 'Individual Ticket'){
-        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        ticketType = document.createTextNode('Selected Ticket: ' + eachChoice);
         displayAll.appendChild(ticketType);
         lineBreak(displayAll);
-        ticketQuantity = document.createTextNode('QUANTITY: ' + individualQuantity);
+        ticketQuantity = document.createTextNode('Quantity: ' + individualQuantity);
         displayAll.appendChild(ticketQuantity);
         lineBreak(displayAll);
         individualTotal = priceList[eachChoice]*individualQuantity;
-        ticketPrice = document.createTextNode('PRICE: $' + individualTotal);
+        ticketPrice = document.createTextNode('Price: $' + individualTotal);
         displayAll.appendChild(ticketPrice);
         lineBreak(displayAll);
         total += individualTotal;
       }
       if(eachChoice == 'Double Trouble'){
-        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        ticketType = document.createTextNode('Selected Ticket: ' + eachChoice);
         displayAll.appendChild(ticketType);
         lineBreak(displayAll);
-        ticketQuantity = document.createTextNode('QUANTITY: ' + doubleQuantity);
+        ticketQuantity = document.createTextNode('Quantity: ' + doubleQuantity);
         displayAll.appendChild(ticketQuantity);
         lineBreak(displayAll);
         doubleTotal = priceList[eachChoice]*doubleQuantity;
-        ticketPrice = document.createTextNode('PRICE: $' + doubleTotal);
+        ticketPrice = document.createTextNode('Price: $' + doubleTotal);
         displayAll.appendChild(ticketPrice);
         lineBreak(displayAll);
         total += doubleTotal;
       }
       if(eachChoice == 'Family Package'){
-        ticketType = document.createTextNode('SELECTED TICKET: ' + eachChoice);
+        ticketType = document.createTextNode('Selected Ticket: ' + eachChoice);
         displayAll.appendChild(ticketType);
         lineBreak(displayAll);
-        ticketQuantity = document.createTextNode('QUANTITY: ' + familyQuantity);
+        ticketQuantity = document.createTextNode('Quantity: ' + familyQuantity);
         displayAll.appendChild(ticketQuantity);
         lineBreak(displayAll);
         familyTotal = priceList[eachChoice]*familyQuantity;
-        ticketPrice = document.createTextNode('PRICE: $' + familyTotal);
+        ticketPrice = document.createTextNode('Price: $' + familyTotal);
         displayAll.appendChild(ticketPrice);
         lineBreak(displayAll);
         total += familyTotal;
       }
     }
     //displaying total cost
-    let totalCost = document.createTextNode('TOTAL COST: $' + total);
+    let totalCost = document.createTextNode('Total Cost: $' + total);
     displayTotal.appendChild(totalCost);
     
     //return selected time and date
@@ -113,13 +113,13 @@ document.querySelector('#next3').addEventListener('click', function(){
     let displayDateTime = document.querySelector('#display-date-time');
     for(let dateChoice of dateTimeChoice){
         if(dateChoice.checked){
-          let selectedDate = document.createTextNode('SELECTED DATE: ' + dateChoice.value);
+          let selectedDate = document.createTextNode('Selected Date: ' + dateChoice.value);
           displayDateTime.appendChild(selectedDate)
           lineBreak(displayDateTime);
         }
     }
     let selectedTime = document.querySelector('#time-selection').value;
-    let displayTime = document.createTextNode('SELECTED TIMING: ' + selectedTime);
+    let displayTime = document.createTextNode('Selected Timing: ' + selectedTime);
     displayDateTime.appendChild(displayTime);
 
     //card input validation
@@ -177,7 +177,7 @@ document.querySelector('#next3').addEventListener('click', function(){
       document.querySelector('#hp-error').innerHTML = "*Please enter a valid phone number"
     }
     else{
-      let displayPhoneNum = document.createTextNode('PHONE NUMBER: ' + phoneNum);
+      let displayPhoneNum = document.createTextNode('Phone Number: ' + phoneNum);
       displayContact.appendChild(displayPhoneNum);
       lineBreak(displayContact);
     }
@@ -188,21 +188,10 @@ document.querySelector('#next3').addEventListener('click', function(){
       document.querySelector('#email-error').innerHTML = "*Please enter a valid email address"
     }
     else{
-      let displayEmail = document.createTextNode('EMAIL: ' + email);
+      let displayEmail = document.createTextNode('Email: ' + email);
       displayContact.appendChild(displayEmail);
     }
 
-    let agreement = document.querySelector('#agreement').value
-    if(agreement.checked){
-      console.log("Customer wish to be informed.")
-    }
-    else{
-      console.log("No, customer do not wish to be informed.")
-    }
-
-    // if(!cardExpiryDateIsInvalid && !cardCvvIsInvalid && !nameIsInvalid && !phoneNumIsInvalid && !emailIsInvalid){
-    //   form.submit()
-    // }
     if(!cardExpiryDateIsInvalid && !cardCvvIsInvalid && !nameIsInvalid && !phoneNumIsInvalid && !emailIsInvalid){
       layerThree.style.display = 'none';
       layerFour.style.display = 'block';
@@ -212,6 +201,17 @@ document.querySelector('#next3').addEventListener('click', function(){
 document.querySelector('#back3').addEventListener('click',function(){
   layerThree.style.display='block';
   layerFour.style.display='none';
+})
+
+document.querySelector('#submit').addEventListener('click',function(){
+  let agree = document.querySelector('#agreement');
+  if(agree.checked == false){
+    let agreeIsFalse = document.querySelector('#agree-false');
+    agreeIsFalse.innerHTML = "*Please agree to the terms and conditions"
+  }
+  else{
+    alert("Reservation is submitted successfully! A confirmation email will be sent to your inbox shortly.")
+  }
 })
 
 // document.querySelector('#submit').addEventListener('click',function(){

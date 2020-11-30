@@ -46,8 +46,7 @@
             <!-- layer 1 -->
             <div id='layer-1'>
                 <div class="header-container">
-                    <h2>Reserve Ticket Now</h2>
-                    <div class="highlighter3"></div>
+                    <div class="page-header">Reserve Ticket Now</div>
                 </div>
                 <div class="form-header" id="ticket-type">1. Select Ticket Type</div>
                 <div class="form-container">
@@ -107,8 +106,7 @@
             <!-- layer 2 -->
             <div id='layer-2'>
                 <div class="header-container">
-                    <h2>Reserve Ticket Now</h2>
-                    <div class="highlighter3"></div>
+                    <div class="page-header">Reserve Ticket Now</div>
                 </div>
                 <div class="form-header">1. Select Ticket Type > <span id="time-and-date">2. Select Date & Time</span>
                 </div>
@@ -165,8 +163,7 @@
             <!-- layer 3 -->
             <div id='layer-3'>
                 <div class="header-container">
-                    <h2>Reserve Ticket Now</h2>
-                    <div class="highlighter3"></div>
+                    <div class="page-header">Reserve Ticket Now</div>
                 </div>
                 <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > <span
                         id="payment-and-contact">3. Payment & Contact</span></div>
@@ -207,9 +204,6 @@
                                 <label for="InputText">Email</label>
                                 <input type="text" class="form-control" id="email">
                                 <p id="email-error" style="color:red"></p>
-                                <input class="form-check-input" type="checkbox" value="agree" id="agreement">
-                                <label class="form-check-label" for="defaultCheck">I wish to be informed about upcoming
-                                    events and promotions.</label><br><br><br>
                             </div>
                             <button type="button" class="btn btn-outline-dark" id="next3">>></button>
                 </div>
@@ -217,8 +211,7 @@
             <!-- layer 4 -->
             <div id='layer-4'>
                 <div class="header-container">
-                    <h2>Reserve Ticket Now</h2>
-                    <div class="highlighter3"></div>
+                    <div class="page-header">Reserve Ticket Now</div>
                 </div>
                 <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > 3. Payment & Contact > <span id="confirm-and-submit"> 4. Confirm & Submit</span></div>
                 <div class="form-container">
@@ -227,12 +220,33 @@
                         <p style="font-weight:bold; font-size:20px">Ticket Summary: </p>
                         <p id="display-all"></p>
                         <p id="display-total"></p>
-                        <p id="display-date-time"></p>
-                    </div>
-                    <div>
+                        <p id="display-date-time"></p><br>
                         <p style="font-weight:bold; font-size:20px">Confirm Contact Details: </p>
                         <p id="display-contact"></p><br><br>
-                        <button id="submit" class="btn btn-outline-dark">Confirm and Pay</button>
+                    </div>
+                    <div>
+                        <p style="font-weight:bold; font-size:20px">Terms and Conditions: </p>
+                        <p>
+                         Tickets may be used by the Ticket Holder only to gain admission
+                         <br> to the relevant Event and not for any other purpose. 
+                         <br>All tickets, whether purchased or complimentary, may not without 
+                         <br>the prior written consent of ASM and the Promoter, be resold or 
+                         <br>offered for resale at a premium or otherwise (whether by on-line 
+                         <br>auction sites or otherwise) or be used for or in connection 
+                         <br>with advertising, promotion or other commercial purposes
+                         <br> (including without limitation competitions and trade promotions) 
+                         <br>or to enhance the demand for other goods or services, either 
+                         <br>by the original buyer or any subsequent bearer. If a ticket 
+                         <br>is sold or used in breach of this condition, the ticket may 
+                         <br>be cancelled without a refund and the bearer of the ticket may 
+                         <br>be refused admission. Entry may be refused if a ticket is damaged, 
+                         <br>defaced, forged or copied in any way or is not bought from the ASM 
+                         <br>Box Office, Ticketing Kiosks, or other authorized points of sale.
+                        </p><br>
+                        <input class="form-check-input" type="checkbox" value="agree" id="agreement">
+                        <label class="form-check-label" for="defaultCheck">I have read and understood the terms and conditions.</label>
+                        <p id="agree-false" style="color:red"></p>
+                        <button type="button" id="submit" class="btn btn-outline-dark">Confirm and Pay</button>
                     </div>
                 </div>
                 <!-- <div class="alert alert-primary" id="submit-alert" role="alert">
