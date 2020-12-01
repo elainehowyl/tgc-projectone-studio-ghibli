@@ -48,7 +48,8 @@ async function getFilmsInfo(containerID,filmTitle){
 }
 
 //function to display images from still-wallpapers.json 
-async function getImages(galleryID,filmTitle){
+
+async function getImages(galleryID,filmTitle,){
     let bgimgs = await getBG();
     let galleryContainer = document.querySelector(galleryID);
     for(let bgimg of bgimgs){
@@ -71,10 +72,11 @@ getFilmsInfo('#introduction-container-3','Spirited Away');
 getFilmsInfo('#introduction-container-4','Arrietty');
 getFilmsInfo('#introduction-container-5','From Up on Poppy Hill');
 
-
 document.querySelector('#show1').addEventListener('click', async function(){
     await getImages('#gallery-container-1','My Neighbor Totoro')
-})
+    let galleryContainer = document.querySelector('#gallery-container-1');
+},{once:true})
+
 document.querySelector('#show2').addEventListener('click', async function(){
     await getImages('#gallery-container-2','Princess Mononoke')
 })
