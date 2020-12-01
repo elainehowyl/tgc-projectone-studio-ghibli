@@ -1,7 +1,7 @@
 /* remove overall margin */
 body{
     margin:0;
-    font-family:'Times New Roman';
+    font-family:'Handlee', cursive;
 }
 
 /* universal background */
@@ -206,19 +206,7 @@ h6{
     padding:30px;
     font-size:18px;
 }
-#ticket-type{
-    font-weight:bold;
-    text-decoration:underline;
-}
-#payment-and-contact{
-    font-weight:bold;
-    text-decoration:underline;
-}
-#confirm-and-submit{
-    font-weight:bold;
-    text-decoration:underline;
-}
-#time-and-date{
+.bold-and-underline{
     font-weight:bold;
     text-decoration:underline;
 }

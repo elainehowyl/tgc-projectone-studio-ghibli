@@ -11,6 +11,10 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 
+    <!-- imported google font:Handlee -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
     <title>Ticket page</title>
 </head>
 
@@ -48,7 +52,7 @@
                 <div class="header-container">
                     <div class="page-header">Reserve Ticket Now</div>
                 </div>
-                <div class="form-header" id="ticket-type">1. Select Ticket Type</div>
+                <div class="form-header"><span class="bold-and-underline"> 1. Select Ticket Type </span> > 2. Select Date & Time > 3. Payment & Contact > 4. Confirm & Submit</div>
                 <div class="form-container">
                     <div class="ticket-form">
                         <input class="form-check-input ticket-choice" type="checkbox" value="Individual Ticket"
@@ -108,8 +112,7 @@
                 <div class="header-container">
                     <div class="page-header">Reserve Ticket Now</div>
                 </div>
-                <div class="form-header">1. Select Ticket Type > <span id="time-and-date">2. Select Date & Time</span>
-                </div>
+                <div class="form-header">1. Select Ticket Type > <span class="bold-and-underline"> 2. Select Date & Time </span> > 3. Payment & Contact > 4. Confirm & Submit</div>
                 <div class="form-container">
                     <button type="button" class="btn btn-outline-dark" id="back1">
                         << </button>
@@ -165,8 +168,7 @@
                 <div class="header-container">
                     <div class="page-header">Reserve Ticket Now</div>
                 </div>
-                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > <span
-                        id="payment-and-contact">3. Payment & Contact</span></div>
+                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > <span class="bold-and-underline"> 3. Payment & Contact </span> > 4. Confirm & Submit</div>
                 <div class="form-container">
                     <button type="button" class="btn btn-outline-dark" id="back2">
                         << </button>
@@ -213,7 +215,7 @@
                 <div class="header-container">
                     <div class="page-header">Reserve Ticket Now</div>
                 </div>
-                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > 3. Payment & Contact > <span id="confirm-and-submit"> 4. Confirm & Submit</span></div>
+                <div class="form-header">1. Select Ticket Type > 2. Select Date & Time > 3. Payment & Contact > <span class="bold-and-underline"> 4. Confirm & Submit</span></div>
                 <div class="form-container">
                     <button type="button" class="btn btn-outline-dark" id="back3"> << </button>
                     <div>
@@ -246,7 +248,7 @@
                         <input class="form-check-input" type="checkbox" value="agree" id="agreement">
                         <label class="form-check-label" for="defaultCheck">I have read and understood the terms and conditions.</label>
                         <p id="agree-false" style="color:red"></p>
-                        <button type="button" id="submit" class="btn btn-outline-dark">Confirm and Pay</button>
+                        <button type="button" id="submit" class="btn btn-outline-dark" role="button">Confirm and Pay</button>
                     </div>
                 </div>
                 <!-- <div class="alert alert-primary" id="submit-alert" role="alert">

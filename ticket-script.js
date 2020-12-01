@@ -211,6 +211,7 @@ document.querySelector('#submit').addEventListener('click',function(){
   }
   else{
     alert("Reservation is submitted successfully! A confirmation email will be sent to your inbox shortly.")
+    window.location="./index.html"
   }
 })
 
