@@ -15,10 +15,12 @@ body{
 
 /* universal page header */
 .page-header{
-    height:10vh;
-    width:30vw;
-    font-size:25px;
-    background-color:palegoldenrod;
+    /* height:10vh; */
+    width:100vw;
+    font-size:30px;
+    text-align:center;
+    background-image:linear-gradient(to bottom right,#c8ba19,#f1e94a);
+    /* background-color:palegoldenrod; */
 }
 
 /* styling for explore.html */
@@ -236,6 +238,12 @@ h6{
 }
 
 /* styling for locate us page */
+.map-bg{
+    background-image:url("images/mbs-background.jpg");
+    width:100vw;
+    height:90vh;
+    background-size:cover;
+}
 #map-container{
     display:flex;
     justify-content:space-between;
@@ -272,7 +280,7 @@ h6{
     padding:30px;
 }
 #pricing-container{
-    height:70vh;
+    height:100vh;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -326,7 +334,5 @@ h6{
     text-align:center;
 }
 
-.testing-div{
-    display:block;
-}
+
 

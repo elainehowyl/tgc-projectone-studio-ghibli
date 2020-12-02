@@ -62,8 +62,6 @@ async function getImages(galleryID,filmTitle,){
             lineBreak(galleryContainer);
         }
     }
-    let copyRight = document.createTextNode('© 2020 All Rights Reserved, Studio Ghibli');
-    galleryContainer.appendChild(copyRight);
 }
 
 getFilmsInfo('#introduction-container-1','My Neighbor Totoro');
@@ -74,19 +72,18 @@ getFilmsInfo('#introduction-container-5','From Up on Poppy Hill');
 
 document.querySelector('#show1').addEventListener('click', async function(){
     await getImages('#gallery-container-1','My Neighbor Totoro')
-    let galleryContainer = document.querySelector('#gallery-container-1');
 },{once:true})
 
 document.querySelector('#show2').addEventListener('click', async function(){
     await getImages('#gallery-container-2','Princess Mononoke')
-})
+},{once:true})
 document.querySelector('#show3').addEventListener('click', async function(){
     await getImages('#gallery-container-3','Spirited Away')
-})
+},{once:true})
 document.querySelector('#show4').addEventListener('click', async function(){
     await getImages('#gallery-container-4','Arrietty')
-})
+},{once:true})
 document.querySelector('#show5').addEventListener('click', async function(){
     await getImages('#gallery-container-5','From Up on Poppy Hill')
-})
+},{once:true})
 
