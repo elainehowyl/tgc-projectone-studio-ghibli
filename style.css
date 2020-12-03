@@ -6,6 +6,7 @@ body{
 
 /* universal background */
 .overall-background{
+    /* width:100vw; */
     /* height:90vh; */
     /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
     background-color:#f8f9fa;
@@ -261,7 +262,7 @@ h6{
 /* styling for pricingpage */
 #pricing-background{
     background-image:url('images/pricingpage-bg.jpg');
-    height:100vh;
+    /* height:100vh; */
     width:100vw;
     background-size:cover;
 }
@@ -280,10 +281,12 @@ h6{
     padding:30px;
 }
 #pricing-container{
-    height:100vh;
+    /* height:100vh; */
     display:flex;
     justify-content:space-around;
-    align-items:center;
+    align-content:center;
+    padding-top:15vh;
+    padding-bottom:15vh;
 }
 
 
@@ -324,7 +327,7 @@ h6{
 } 
 #about-studio{
     padding:25px;
-    height:60vh;
+    /* height:60vh; */
     background-color:#f8f9fae8;
     text-align:center;
 }
@@ -332,6 +335,74 @@ h6{
     font-weight:bold;
     font-size:30px;
     text-align:center;
+}
+
+/* media query */
+
+@media only screen
+/* and (min-width:768px) */
+and (max-width:1024px){
+    /* for explore page */
+    h1{
+        font-size:30px;
+    }
+    h3{
+        font-size:15px;
+    }
+    #loading-bar-container{
+        width:30vw;
+        font-size:10px;
+    }
+    /* for gallery page */
+}
+
+@media only screen
+and (min-width:320px)
+and (max-width:480px){
+    /* for explore page */
+    h1{
+        font-size:20px;
+    }
+    h3{
+        font-size:10px;
+    }
+    #loading-bar-container{
+        width:40vw;
+        font-size:5px;
+    }
+    /* for gallery page */
+    #gallery-bg{
+        height:45vh;
+        width:100vw;
+        background-size:cover;
+    }
+    #about-studio{
+        height:100vh;
+    }
+    #totoro{
+        flex-direction:column;
+    }
+    #mononoke{
+        flex-direction:column;
+    }
+    #spirited-away{
+        flex-direction:column;
+    }
+    #arrietty{
+        flex-direction:column;
+    }
+    #poppy-hill{
+        flex-direction:column;
+    }
+    .poster-size{
+        /* height:50vh; */
+        width:80vw;
+        /* height:350px;
+        width:250px; */
+    }
+    .btn-margin{
+        margin-left:15px;
+    }
 }
 
 

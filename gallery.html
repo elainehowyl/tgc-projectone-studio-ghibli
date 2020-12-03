@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 
     <!-- !-- imported google font: Amatic SC --> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,8 +23,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/studio-ghibli-logo.png" width="120" height="90" alt="studio ghibli logo" loading="lazy">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/studio-ghibli-logo.png" width="120" height="90" alt="studio ghibli logo" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,20 +32,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="explorepage.html">Explore</a>
+              <a class="nav-link" href="./explorepage.html">Explore</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pricingpage.html">Pricing</a>
+              <a class="nav-link" href="./pricingpage.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="locate-us.html">Locate Us</a>
+              <a class="nav-link" href="./locate-us.html">Locate Us</a>
             </li>
           </ul>
         </div>
-        <a class="btn btn-outline-dark" href="select-ticket-page.html" role="button">Tickets</a>
+        <a class="btn btn-outline-dark" href="./select-ticket-page.html" role="button">Tickets</a>
       </nav>
       <div class="overall-background">
         <div id='gallery-bg'>
@@ -57,56 +57,56 @@
           <p>Scroll down to see the still background images from 5 selected movies.</p>
           <p>*Please note that the images are not allowed for distribution and commercial purposes</p>
           <p>To see more, book a ticket to visit the exhibition now!</p>
-          <button type="button" class="btn btn-dark btn-lg" href="select-ticket-page.html">Go To Ticket</button><br><br>
+          <a class="btn btn-dark btn-lg" href="./select-ticket-page.html" role="button">Go To Tickets</a><br><br>
           <p>© 2020 All Rights Reserved, Studio Ghibli</p><hr>
         </div>
         <div id='totoro'>
           <div class="poster-styling">
-           <img src='images/totoro.jpg' width="300" height="400">
+           <img src='./images/totoro.jpg' class="poster-size" width="300" height="400">
           </div>
           <div>
             <div id="introduction-container-1" class="introduction-styling"></div>
-            <button type="button" class="btn btn-outline-primary" id="show1">Open Gallery</button>
+            <button type="button" class="btn btn-outline-primary btn-margin" id="show1">Open Gallery</button>
           </div>
         </div>
          <div id="gallery-container-1" class="gallery-styling"></div><hr>
         <div id='mononoke'>
           <div class="poster-styling">
-           <img src='images/mononoke.jpg' width="300" height="400">
+           <img src='./images/mononoke.jpg' class="poster-size" width="300" height="400">
           </div>
           <div>
             <div id="introduction-container-2" class="introduction-styling"></div>
-            <button type="button" class="btn btn-outline-warning" id="show2">Open Gallery</button>
+            <button type="button" class="btn btn-outline-warning btn-margin" id="show2">Open Gallery</button>
         </div>
         </div>
          <div id="gallery-container-2" class="gallery-styling"></div><hr>
          <div id='spirited-away'>
           <div class="poster-styling">
-           <img src='images/spirited-away.jpg' width="300" height="400">
+           <img src='./images/spirited-away.jpg' class="poster-size" width="300" height="400">
           </div>
           <div>
             <div id="introduction-container-3" class="introduction-styling"></div>
-            <button type="button" class="btn btn-outline-danger" id="show3">Open Gallery</button>
+            <button type="button" class="btn btn-outline-danger btn-margin" id="show3">Open Gallery</button>
           </div>
          </div>
          <div id="gallery-container-3" class="gallery-styling"></div><hr>
          <div id='arrietty'>
            <div class="poster-styling">
-            <img src='images/arrietty.jpg' width="300" height="400">
+            <img src='./images/arrietty.jpg' class="poster-size" width="300" height="400">
            </div>
            <div>
              <div id="introduction-container-4" class="introduction-styling"></div>
-             <button type="button" class="btn btn-outline-success" id="show4">Open Gallery</button>
+             <button type="button" class="btn btn-outline-success btn-margin" id="show4">Open Gallery</button>
            </div>
          </div>
          <div id="gallery-container-4" class="gallery-styling"></div><hr>
          <div id='poppy-hill'>
           <div class="poster-styling">
-           <img src='images/poppy-hill.jpg' width="300" height="400">
+           <img src='./images/poppy-hill.jpg' class="poster-size" width="300" height="400">
           </div>
           <div>
             <div id="introduction-container-5" class="introduction-styling"></div>
-            <button type="button" class="btn btn-outline-info" id="show5">Open Gallery</button>
+            <button type="button" class="btn btn-outline-info btn-margin" id="show5">Open Gallery</button>
           </div>
         </div>
         <div id="gallery-container-5" class="gallery-styling"></div><hr>
@@ -124,6 +124,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="gallery.js"></script>
+    <script src="./gallery.js"></script>
   </body>
 </html>
