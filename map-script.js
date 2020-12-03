@@ -19,7 +19,9 @@ artScienceMarker.addTo(map);
 
 //marker's popout address
 artScienceMarker.bindPopup(`<h5>Art Science Museum</h5>
+                            <hr>
                             <img src='images/artsciencemuseum.jpg' height=50 width=90>
                             <img src='images/artsciencemuseum2.jpg' height=50 width=90>
+                            <hr>
                             <p>6 Bayfront Ave, Singapore 018974<p>`)
 
