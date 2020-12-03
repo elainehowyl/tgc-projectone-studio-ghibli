@@ -125,7 +125,7 @@ document.querySelector('#next3').addEventListener('click', function(){
     let cardNumber = document.querySelector('#card-number').value
     if (cardNumber.length != 19){
       cardNumberIsInvalid = true;
-      document.querySelector('#card-number-error').innerHTML = "*Card number must be in the format of: XXXX XXXX XXXX XXXX"
+      document.querySelector('#card-number-error').innerHTML = "*Card number must be in the format of: <br> XXXX XXXX XXXX XXXX"
     }
     else{
       displayCardNumber.innerHTML = `Card Number: ${cardNumber}`;
