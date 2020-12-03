@@ -133,7 +133,7 @@ h3{
 }
 .jumbotron{
     margin:0;
-    height:90vh;
+    height:100vh;
     background-image:url('images/marnie021.jpg');
     background-size:cover;
     animation-name:auto-slider;
@@ -319,12 +319,12 @@ h6{
     flex-wrap:wrap;
     justify-content:center;
 }
-#gallery-bg{
+/* #gallery-bg{
     background-image:url('images/studio-ghibli-office.jpg');
     background-size:cover;
     height:100vh;
     width:100vw;;
-} 
+}  */
 #about-studio{
     padding:25px;
     /* height:60vh; */
@@ -340,7 +340,7 @@ h6{
 /* media query */
 
 @media only screen
-/* and (min-width:768px) */
+and (min-width:768px)
 and (max-width:1024px){
     /* for explore page */
     h1{
@@ -354,6 +354,9 @@ and (max-width:1024px){
         font-size:10px;
     }
     /* for gallery page */
+    img{
+        object-fit:cover;
+    }
 }
 
 @media only screen
@@ -371,13 +374,8 @@ and (max-width:480px){
         font-size:5px;
     }
     /* for gallery page */
-    #gallery-bg{
-        height:45vh;
-        width:100vw;
-        background-size:cover;
-    }
-    #about-studio{
-        height:100vh;
+    img{
+        object-fit:cover;
     }
     #totoro{
         flex-direction:column;
@@ -395,10 +393,7 @@ and (max-width:480px){
         flex-direction:column;
     }
     .poster-size{
-        /* height:50vh; */
         width:80vw;
-        /* height:350px;
-        width:250px; */
     }
     .btn-margin{
         margin-left:15px;
