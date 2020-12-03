@@ -45,7 +45,6 @@ document.querySelector('#next3').addEventListener('click', function(){
       }
     }
     // selecting html p
-    // let displayAll = document.querySelector('#display-all');
     let displayIndividual = document.querySelector('#display-individual');
     let displayDouble = document.querySelector('#display-double');
     let displayFamily = document.querySelector('#display-family');
