@@ -193,6 +193,7 @@ h3{
 }
 .ticket-form{
     border:solid;
+    border-radius:25px;
     padding:15px;
 }
 #date-form-container{
@@ -202,6 +203,7 @@ h3{
 }
 .date-form{
     border:solid;
+    border-radius:25px;
     padding:15px;
     width:10vw;
     height:40vh;

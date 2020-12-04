@@ -39,7 +39,11 @@ The main goal of the user is to reserve ticket and find out more information abo
 
 #### User's Stories
 
-* As a ticket buyer, I want to be able to
+* As a ticket buyer, I want to be able to view the different pricing package so that I know which ticket would be suitable for me.
+* As a ticket buyer, I want to be able to select ticket type, select date and time, provide contact and payment details so that I can purchase a ticket.
+* As a ticket buyer, I want to be able to access the ticket page easily so that I don't have to spend time searching for the button/
+* As a ticket buyer, I want to know more information about the exhibition so that I can know who to go with.
+* As a ticket buyer, I want to be able to know which transportation I should take to the exhibition so that I won't be late on the day.
 
 ## Scope
 
@@ -122,7 +126,21 @@ Features:
 * A form for the user to fill in their payment and contact details.
 * A confirm and submit page to allow user to review their selected choices and input.
 
-## Design and Color Scheme
+## Color Scheme and Font
+
+I have used the images from Studio Ghibli as a background to the homepage and explore page. The decision was made because of the vibrant colours that the images contain. I do think that the colours create a sense of familiarity among the Studio Ghibli and Japanese anime fans. It also creates excitement and also, in my view, an impulse to buy the ticket.
+
+Other than the two pages, most of the color scheme for my layout is actually Alice Blue(#f8f9fa), which resembles a warmer tone of white. The colour choice is selected to distinguish the purpose of the pages. While the homepage and explore page were created to attract and convince a user to reserve a ticket, the other pages like the pricing, locate-us and ticket pages are meant to provide functionality. Thus, Alice Blue is a good fit because it creates a more serious tone and can prevent the user to be distracted from his or her main task.
+
+The font used in the website are as follow:
+* Handlee, cursive
+* Amatic SC, cursive
+* VT323, monospace
+
+The above fonts were chosen based on the criterias:
+* Easy on the eyes
+* Not used in books and professional documents.
+* Cartoonish-like.
 
 ## Acknowledgement
 
@@ -132,11 +150,11 @@ Features:
 
 ### API
 * Studio Ghibli restful API by: 
-[GhibliAPI] (https://ghibliapi.herokuapp.com/)
+[GhibliAPI](https://ghibliapi.herokuapp.com/)
 
 ### Images
 * Background Images from Homepage, Explore Page, posters and still background images from Gallery page by:
-[StudioGhibli] (https://www.ghibli.jp/info/013381/)
+[StudioGhibli](https://www.ghibli.jp/info/013381/)
 
 * Background Image of Pricing Page by JULIO NERY from Pexels:
 https://www.pexels.com/photo/paintings-in-side-room-1839919/
