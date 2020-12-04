@@ -13,8 +13,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
 }).addTo(map);
 
-//creating a marker
-let artScienceMarker = L.marker([1.2863,103.8593]);
+//creating a custom marker
+var orangeLeaf = L.icon({
+    iconUrl: 'images/leaf-orange.png',
+    shadowUrl: 'images/leaf-shadow.png',
+
+    iconSize:     [38, 95], // size of the icon
+    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [1.2863,103.8593], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+let artScienceMarker = L.marker([1.2863,103.8593],{icon: orangeLeaf});
 artScienceMarker.addTo(map);
 
 //marker's popout address

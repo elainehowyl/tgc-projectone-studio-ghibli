@@ -336,12 +336,18 @@ and (max-width:1024px){
         font-size:30px;
     }
     /* for index page --- tbc*/
+    .site-title{
+        font-size:40px;
+    }
+    .lead{
+        font-size:20px;
+    }
     /* for explore page */
     h1{
-        font-size:30px;
+        font-size:25px;
     }
     h3{
-        font-size:15px;
+        font-size:10px;
     }
     #loading-bar-container{
         width:30vw;
@@ -369,6 +375,12 @@ and (max-width:480px){
         font-size:20px;
     }
     /* for index page --- tbc*/
+    .site-title{
+        font-size:30px;
+    }
+    .lead{
+        font-size:15px;
+    }
     /* for explore page */
     h1{
         font-size:20px;

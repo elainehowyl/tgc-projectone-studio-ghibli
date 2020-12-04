@@ -102,7 +102,7 @@ The homepage acts as a base where all the other pages would branch out from. Bes
 
 ### Map
 
-* Map by:
+* Map and marker by:
 [leaflet]https://leafletjs.com/
 
 ### Texture

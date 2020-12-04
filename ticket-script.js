@@ -1,11 +1,5 @@
 // for select-ticket-page.html
 
-// function for linebreak
-function lineBreak(element){
-  let lineBreak = document.createElement('br');
-  return element.appendChild(lineBreak);
-}
-
 //for layers in the same page
 let layerOne = document.querySelector('#layer-1');
 let layerTwo = document.querySelector('#layer-2');
@@ -13,16 +7,42 @@ let layerThree = document.querySelector('#layer-3');
 let layerFour = document.querySelector('#layer-4');
 
 document.querySelector('#next1').addEventListener('click',function(){
+  // validation for selecting ticket type (checkboxes)
+  let allChoices = document.querySelectorAll('.ticket-choice');
+  let count = 0;
+  for(let eachChoice of allChoices){
+    if(eachChoice.checked){
+        count+=1;
+      }
+  }
+  if(count>0){
     layerOne.style.display='none';
     layerTwo.style.display='block';
+  }
+  else{
+    alert("Please select a ticket type!")
+  }
 })
 document.querySelector('#back1').addEventListener('click',function(){
     layerOne.style.display='block';
     layerTwo.style.display='none';
 })
 document.querySelector('#next2').addEventListener('click',function(){
+  // validation for radio button (selecting date)
+  let dateTimeChoice = document.querySelectorAll('.date-choice');
+  let count = 0;
+  for(let dateChoice of dateTimeChoice){
+    if(dateChoice.checked){
+        count+=1;
+      }
+  }
+  if(count>0){
     layerTwo.style.display='none';
     layerThree.style.display='block';
+  }
+  else{
+    alert("Please select a date and time!")
+  }
 })
 document.querySelector('#back2').addEventListener('click',function(){
     layerTwo.style.display='block';
