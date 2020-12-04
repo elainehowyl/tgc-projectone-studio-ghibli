@@ -108,4 +108,7 @@ https://unsplash.com/photos/__cBlRzLSTg
 * Symbol for pricing page and back to top button by:
 [i2symbol]http://www.i2symbol.com/symbols/arrows
 
+### Favicon
+* Favicon from [Favicon.io]https://favicon.io/emoji-favicons/trident-emblem/
+
 

@@ -23,7 +23,8 @@ body{
     /* background-color: #eb8038;
     background-color: #eb8038;
     background-color: #a781d1; */
-    background-image: url("./images/chihiro043.jpg");
+    background-image: url("./images/chihiro043-header.jpg");
+    background-size:cover;
     /* background-position:center center; */
     /* background-image:linear-gradient(to bottom right,#c8ba19,#f1e94a); */
     /* background-color:palegoldenrod; */
