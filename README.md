@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a project where I am required to create a website with the knowledge of HTML, CSS and Javascript. The theme that I chose is a ticketing platform for an exhibition that is hosted by both Art Science Museum and Studio Ghibli. 
+This is a project where I am required to create a website with the knowledge of HTML, CSS and Javascript. The theme that I've chosen is a ticketing platform for an exhibition that is hosted by both Art Science Museum and Studio Ghibli. 
 
 ## Motivation
 
@@ -24,8 +24,6 @@ A live demo of the website can be found here:
 As a site owner, from the point of view as a staff from Art Science Museum, my primary goal of creating the website is to arouse public's awareness about the exhibition, promote ticket sales and also, to encourage local tourism.
 
 I would also like to take this opportunity to get people to know more about the future exhibitions the museum is going to have.
-
-Art Science Museum would like to create a presence in the public's eyes with its first global collaboration with Studio Ghibli, a widely known animation studio around the world. This 
 
 #### Client (Studio Ghibli)
 
