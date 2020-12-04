@@ -6,9 +6,6 @@ body{
 
 /* universal background */
 .overall-background{
-    /* width:100vw; */
-    /* height:90vh; */
-    /* background-image:linear-gradient(to bottom right,#9fe7e7,#b19cd9,#e0a3db); */
     background-color:#f8f9fa;
     border-top:outset;
 }
@@ -16,18 +13,11 @@ body{
 
 /* universal page header */
 .page-header{
-    /* height:10vh; */
     width:100%;
     font-size:40px;
     text-align:center;
-    /* background-color: #eb8038;
-    background-color: #eb8038;
-    background-color: #a781d1; */
     background-image: url("./images/chihiro043-header.jpg");
     background-size:cover;
-    /* background-position:center center; */
-    /* background-image:linear-gradient(to bottom right,#c8ba19,#f1e94a); */
-    /* background-color:palegoldenrod; */
 }
 
 /* styling for explore.html */
@@ -239,8 +229,6 @@ h6{
 .map-bg{
     background-image:url("./images/mbs-background.jpg");
     width:100%;
-    /* height:90vh; */
-    /* position:relative; */
     background-size:cover;
 }
 #map-container{
@@ -258,13 +246,11 @@ h6{
 }
 .accordion{
     width:40%;
-    /* margin-right:10%; */
 }
 
 /* styling for pricingpage */
 #pricing-background{
     background-image:url('./images/pricingpage-bg.jpg');
-    /* height:100%; */
     width:100%;
     background-size:cover;
 }
@@ -273,7 +259,6 @@ h6{
     padding:30px;
 }
 #pricing-container{
-    /* height:100vh; */
     display:flex;
     justify-content:space-around;
     align-content:center;
@@ -313,7 +298,6 @@ h6{
 }
 #about-studio{
     padding:25px;
-    /* height:60vh; */
     background-color:#f8f9fae8;
     text-align:center;
 }
@@ -322,9 +306,7 @@ h6{
     font-size:30px;
     text-align:center;
 }
-/* #back-to-top{
-    text-align:center;
-} */
+
 
 /* media query */
 
@@ -335,7 +317,7 @@ and (max-width:1024px){
     .page-header{
         font-size:30px;
     }
-    /* for index page --- tbc*/
+    /* for index page */
     .site-title{
         font-size:40px;
     }
@@ -374,7 +356,7 @@ and (max-width:480px){
     .page-header{
         font-size:20px;
     }
-    /* for index page --- tbc*/
+    /* for index page */
     .site-title{
         font-size:30px;
     }
