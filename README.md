@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This is a project where I create a ticketing platform for an exhibition that is hosted by both Art Science Museum and Studio Ghibli.
+This is a project where I create a ticketing platform for an exhibition that is hosted by both Art Science Museum and Studio Ghibli. The motivation for this project came from implications of the current Covid-19 situation where people were stripped off their freedom to travel around the globe, which resulted in a growing interest among the locals to explore their home country.
+
+The purpose of this website aims to help the museum to be a place of consideration when people thinks about local tourism.
 
 ## Demo
 
@@ -17,7 +19,7 @@ A live demo of the website can be found here:
 
 As a site owner, from the point of view as a staff from Art Science Museum, my primary goal of creating the website is to arouse public's awareness about the exhibition, promote ticket sales and also, to encourage local tourism.
 
-Since the start of the year, the Coronavirus has stripped everyone off the right to travel freely across the globe. As a result of that, there has been a growing interest among Singaporeans to explore their home country. Local tourism has also been encouraged to help the recovery of the country's economy.
+I would also like to take this opportunity to get people to know more about the future exhibitions the museum is going to have.
 
 Art Science Museum would like to create a presence in the public's eyes with its first global collaboration with Studio Ghibli, a widely known animation studio around the world. This 
 
@@ -57,13 +59,22 @@ The main goal of the user is to reserve ticket and find out more information abo
 
 ## Structure 
 
-![Studio Ghibli Sitemap](./images/tgc-projectone-studio-ghibli-sitemap.png)
+![Studio Ghibli Sitemap](./readme-images/tgc-projectone-studio-ghibli-sitemap.png)
 
-The homepage acts as a base where all the other pages would branch out from. Besides the navigation bar, the ticketing page is also linked from the homepage and the gallery page to facilitate convenience of booking a ticket.
+The website is based on more of a hierarchical structure where the homepage acts as a base. With the implementation of a navigation bar, the user would be able to navigate around different pages easily.
+
+Besides the navigation bar, the ticketing page is also linked from the homepage and the gallery page to facilitate convenience of booking a ticket.
       
 ## Skeleton
 
-![Studio Ghibli Skeleton](./images/homepage-skeleton.png)
+![Homepage Skeleton](./readme-images/homepage-skeleton.png)
+![Explore Page Skeleton](./readme-images/explore-page-skeleton.png)
+![Gallery Page Skeleton](./readme-images/gallery-page-skeleton.png)
+![Pricing Page Skeleton](./readme-images/pricing-page-skeleton.png)
+![Locate Us Page Skeleton](./readme-images/locate-us-skeleton.png)
+![Ticket Page Skeleton](./readme-images/ticket-page-skeleton.png)
+
+The layout of my website is pretty simplistic with just a navigation bar and a body. Each page is structered in a way 
 
 ## Design and Color Scheme
 
