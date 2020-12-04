@@ -14,8 +14,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 //creating a custom marker
-var orangeLeaf = L.icon({
-    iconUrl: 'images/leaf-orange.png',
+var redLeaf = L.icon({
+    iconUrl: 'images/leaf-red.png',
     shadowUrl: 'images/leaf-shadow.png',
 
     iconSize:     [38, 95], // size of the icon
@@ -25,7 +25,7 @@ var orangeLeaf = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
-let artScienceMarker = L.marker([1.2863,103.8593],{icon: orangeLeaf});
+let artScienceMarker = L.marker([1.2863,103.8593],{icon: redLeaf});
 artScienceMarker.addTo(map);
 
 //marker's popout address

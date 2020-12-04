@@ -20,10 +20,11 @@ body{
     width:100%;
     font-size:40px;
     text-align:center;
+    /* background-color: #eb8038;
     background-color: #eb8038;
-    background-color: #eb8038;
-    background-color: #a781d1;
-    background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
+    background-color: #a781d1; */
+    background-image: url("./images/chihiro043.jpg");
+    /* background-position:center center; */
     /* background-image:linear-gradient(to bottom right,#c8ba19,#f1e94a); */
     /* background-color:palegoldenrod; */
 }
@@ -318,13 +319,9 @@ h6{
     font-size:30px;
     text-align:center;
 }
-
-/* testing */
-#testing-div{
-    background-color:blue;
-    width:100vw;
-    height:100vh;
-}
+/* #back-to-top{
+    text-align:center;
+} */
 
 /* media query */
 
